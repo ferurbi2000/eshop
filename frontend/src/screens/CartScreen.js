@@ -51,7 +51,7 @@ export default function CartScreen() {
               <Link to="/">Go Shopping</Link>
             </MessageBox>
           ) : (
-            <listGroup>
+            <ListGroup>
               {cartItems.map((item) => (
                 <ListGroup.Item key={item._id}>
                   <Row className="align-items-center">
@@ -96,7 +96,7 @@ export default function CartScreen() {
                   </Row>
                 </ListGroup.Item>
               ))}
-            </listGroup>
+            </ListGroup>
           )}
         </Col>
         <Col md={4}>
